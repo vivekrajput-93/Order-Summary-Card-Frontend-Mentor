@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+
+
+--Very-pale-blue:hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    background: url("./images/pattern-background-desktop.svg");
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.container {
+    width: 350px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.image {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+
+h1 {
+    font-size: 25px;
+    text-align: center;
+    color: var(--Dark-blue);
+}
+
+.para {
+    font-size: 16px;
+    text-align: center;
+    margin: 10px;
+    color: var(--Desaturated-blue);
+}
+
+.list > img {
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.list {
+    background-color: blue;
+    width: 80%;
+    display: flex;
+    height: 70px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 35px;
+    padding: 10px;
+    background-color: var(--Very-pale-blue);
+
+}
+
+.big {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.point {
+    color: var(--Dark-blue);
+    font-weight: bold;
+}
+
+.paint {
+ color: var(--Desaturated-blue);
+}
+
+.annual {
+    font-size: 13px;
+    padding-left: 10px;
+}
+a {
+    font-size: 12px;
+    color: var(--Bright-blue);
+    
+}
+
+.button {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button > button:first-child {
+    margin-bottom: 20px;
+    padding: 12px 78px 12px 78px;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--Bright-blue);
+    box-shadow: rgb(26, 17, 120) 0px 20px 30px -10px;
+
+}
+.button > button:first-child:hover {
+    background-color: rgb(76, 76, 181);
+}
+
+.button > button:nth-child(2) {
+    border: none;
+    background-color: #fff;
+    color: var(--Desaturated-blue);
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+@media(max-width: 360px){
+
+    body {
+        background: url("./images/pattern-background-mobile.svg");
+    }
+    .container {
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .big {
+        font-size: 10px;
+    }
+
+    a {
+        margin-left: -40px;
+    }
+
+    .para {
+        font-size: 13px;
+    }
+}
+
+
+
